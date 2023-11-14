@@ -6,4 +6,4 @@ ID : zizizi4232
 
 PW : qwer1224
 
-DbNAME :zzzz
+DbNAME : qqqqqq

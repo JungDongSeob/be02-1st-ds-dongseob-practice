@@ -1,0 +1,9 @@
+IP : 112.1112.111.0
+
+PORT : 3306
+
+ID : zizizi4232	
+
+PW : qwer1224
+
+DbNAME :zzzz

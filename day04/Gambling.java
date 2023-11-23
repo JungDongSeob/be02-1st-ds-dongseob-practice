@@ -33,7 +33,6 @@ public class Gambling {
         if (this.score != 0)
             this.score = this.score - 1;
         System.out.println("점수 : " + this.score);
-        System.out.println("목숨 : " + heart);
     }
 
     void upScore() {
@@ -76,7 +75,7 @@ public class Gambling {
             count = count + 1;
         }
         for (int a = 0; a < 3; a++)
-            System.out.print(arrInt[a]+ " ");
+            System.out.print(arrInt[a] + " ");
 
         Scanner sc = new Scanner(System.in);
         System.out.println();
@@ -84,12 +83,12 @@ public class Gambling {
         System.out.println("숫자를 선택해라!");
         int numInt = sc.nextInt();
 
-        if(arrInt[numInt-1]==1) {       // 1성공 2꽝 3폭탄
+        if (arrInt[numInt - 1] == 1) {       // 1성공 2꽝 3폭탄
             upScore();
-        } else if (arrInt[numInt-1]==2){
+        } else if (arrInt[numInt - 1] == 2) {
             System.out.println("점수 : " + this.score);
-            System.out.println("목숨 : " + heart);
-        } else if (arrInt[numInt-1]==3){
+            downHeart();
+        } else if (arrInt[numInt - 1] == 3) {
             downScore();
             downHeart();
         } else {
@@ -97,7 +96,8 @@ public class Gambling {
             //continue;
         }
     }
-//    public int selectChoice (){
+
+    //    public int selectChoice (){
 //        int[] num = {1,2,3};
 //        return 0;
 //    }
@@ -110,10 +110,10 @@ public class Gambling {
                 '}';
     }
 
-    public Gambling(String name, int heart, int score){
-            this.name = name;
-            this.heart = heart;
-            this.score = score;
+    public Gambling(String name, int heart, int score) {
+        this.name = name;
+        this.heart = heart;
+        this.score = score;
     }
 }
 

@@ -21,7 +21,7 @@ public class FlyingPocketmon extends Pocketmon {
         } else {
             System.out.println("안맞지롱");
         }
-        return this.hp;
+        return this.getHp();
     }
 
     int flying() {

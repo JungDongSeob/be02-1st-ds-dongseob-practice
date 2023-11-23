@@ -1,4 +1,4 @@
-package day03;
+package day04;
 
 public class FlyingPocketmon extends Pocketmon {
     private int z;

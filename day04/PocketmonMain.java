@@ -1,4 +1,4 @@
-package day03;
+package day04;
 
 public class PocketmonMain {
     public static void main(String[] args) {
